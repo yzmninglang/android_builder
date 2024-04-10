@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
+      - name: set gradle
+        uses: gradle/gradle-build-action@v3
+      - name: setup-android
+        uses: android-actions/setup-android@v3
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
